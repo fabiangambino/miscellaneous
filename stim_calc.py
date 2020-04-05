@@ -16,7 +16,7 @@ def stimulusPackage(income):
         return output
 
 #married
-def marriedStimulus(coupleincome, n):  #'n' is for number of kids you have;
+def marriedStimulus(coupleincome, n):  # 'n' is for number of kids you have
 
   if (coupleincome <= 150000):
       child = 500 * n
@@ -25,7 +25,7 @@ def marriedStimulus(coupleincome, n):  #'n' is for number of kids you have;
   elif (coupleincome >= 198000):
     return 0
 
-  else:   # 150000 < income < 198000;
+  else:   # 150000 < income < 198000
       subtract = coupleincome - 150000
       division = math.floor(subtract / 100)
       child = 500 * n
